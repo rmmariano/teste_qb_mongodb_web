@@ -15,17 +15,17 @@ public class Cliente {
 	
 	public String nome;
 	
-	@Reference
+//	@Reference
 //	private Set<Cachorro> cachorros;
 //	private Set<Cachorro> cachorros = new HashSet<Cachorro>();
 //	public Set<Cachorro> cachorros = new HashSet<Cachorro>();
-	public List<Cachorro> cachorros = new ArrayList<Cachorro>();
+//	public List<Cachorro> cachorros = new ArrayList<Cachorro>();
 	
-	@Reference
+//	@Reference
 //	private Set<Pagamento> pagamentos;
 //	private Set<Pagamento> pagamentos = new HashSet<Pagamento>();
 //	public Set<Pagamento> pagamentos = new HashSet<Pagamento>();
-	public List<Pagamento> pagamentos = new ArrayList<Pagamento>();
+//	public List<Pagamento> pagamentos = new ArrayList<Pagamento>();
 	
 //	public Cliente() {
 //	}

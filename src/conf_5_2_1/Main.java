@@ -18,6 +18,10 @@ public class Main {
 		cliente.matricula = 0;
 		cliente.nome = "Maril";
 		
+		Cliente cliente02 = new Cliente();
+		cliente02.matricula = 1;
+		cliente02.nome = "Abys";
+		
 //		Cachorro cachorro = new Cachorro("Hau", "pastor");
 		Cachorro cachorro = new Cachorro();
 		cachorro.nome = "Hau";
@@ -31,34 +35,35 @@ public class Main {
 		
 		
 //		cliente.addCachorro(cachorro);
-		cliente.cachorros.add(cachorro);
+//		cliente.cachorros.add(cachorro);
 //		cliente.addPagamento(pagamento);
-		cliente.pagamentos.add(pagamento);
+//		cliente.pagamentos.add(pagamento);
 		
 		ds.save(cliente);
+		ds.save(cliente02);
 		
 		Query<Cliente> query_cliente = ds.find(Cliente.class);		
-//		List<Cliente> lista_clientes = query_cliente.asList();
+		List<Cliente> lista_clientes = query_cliente.asList();
 		
-		for(Cliente c: query_cliente){
+		for(Cliente c: lista_clientes){
 			System.out.println("Matrícula: " + c.matricula);
 			System.out.println("Nome: " + c.nome);
 			
-			System.out.println("Cachorros: ");			
-			List<Cachorro> set_cachorros = c.cachorros;	
-			
-			for(Cachorro dog: set_cachorros){
-				System.out.println(" Nome: " + dog.nome);				
-				System.out.println(" Raça: " + dog.raca);
-			}
-			
-			System.out.println("Pagamentos: ");			
-			List<Pagamento> set_pags = c.pagamentos;			
-			for(Pagamento pag: set_pags){
-				System.out.println(" ID: " + pag.id);				
-				System.out.println(" Valor: " + pag.valor);
-				System.out.println(" Data: " + pag.data);
-			}
+//			System.out.println("Cachorros: ");			
+//			List<Cachorro> set_cachorros = c.cachorros;	
+//			
+//			for(Cachorro dog: set_cachorros){
+//				System.out.println(" Nome: " + dog.nome);				
+//				System.out.println(" Raça: " + dog.raca);
+//			}
+//			
+//			System.out.println("Pagamentos: ");			
+//			List<Pagamento> set_pags = c.pagamentos;			
+//			for(Pagamento pag: set_pags){
+//				System.out.println(" ID: " + pag.id);				
+//				System.out.println(" Valor: " + pag.valor);
+//				System.out.println(" Data: " + pag.data);
+//			}
 			
 			System.out.println("\n");			
 		}
