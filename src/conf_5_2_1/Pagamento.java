@@ -9,6 +9,7 @@ public class Pagamento {
 	public float valor;
 	public String data;
 	
+	
 //	public Pagamento() {
 //	}
 //	

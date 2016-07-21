@@ -30,7 +30,5 @@ public class MongoDBDatastoreProvider extends DatastoreProvider{
 	public Datastore getDatastore() {
 		return getMorphia().createDatastore(mongo, "testdb");
 	}
-	
-	
 
 }

@@ -12,8 +12,10 @@ public class Cliente {
 	
 	@Id
 	public int matricula;
-	
 	public String nome;
+	public Set<Cachorro> cachorros = new HashSet<Cachorro>();
+	public Set<Pagamento> pagamentos = new HashSet<Pagamento>();
+	
 	
 //	@Reference
 //	private Set<Cachorro> cachorros;
